@@ -1,11 +1,13 @@
+import React from 'react';
+
 import Board from '../components/board.js';
 
-import { useLocalStorageState } from '../utils/useLocalStorageState.js';
+import { useLocalStorageState } from '../hooks/useLocalStorageState.js';
 import { calculateStatus } from '../utils/calculateStatus.js';
 import { calculateNextValue } from '../utils/calculateNextValue.js';
 import { calculateWinner } from '../utils/calculateWinner.js';
 
-export default function index() {
+export default function Index() {
   const [history, setHistory] = useLocalStorageState('tic-tac-toe:history', [
     Array(9).fill(null),
   ]);
