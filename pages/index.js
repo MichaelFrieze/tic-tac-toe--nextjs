@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Board from '../components/board.js';
 
 import { useLocalStorageState } from '../hooks/useLocalStorageState.js';
